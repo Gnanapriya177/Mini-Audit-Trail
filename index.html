@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Audit Trial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <h2>
+            Mini Audit Trail Generator
+        </h2>
+    </header>
+
+    <!--CARD-->
+    <div class="card-container">
+        <!--Text Area-->
+        <div class="text-area">
+            <h4 style="text-align: left">Audit Trail</h4>
+            <p style="text-align: left">Auto-saves changes and records a timeline of edits</p>
+            <textarea id="text-editor" placeholder="Type something here"></textarea>
+            <button id = "save-btn">Save Version</button>
+        </div>
+
+        <!--VERSION HISTORY-->
+        <div class="version-history">
+            <h4>Version History</h4>
+            <p>Latest edits appear at top</p>
+            <div id="history-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
